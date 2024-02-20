@@ -1,12 +1,11 @@
-import { useState } from 'react'
 import './App.css'
 import Navbar from './Components/Navbar'
-import Slider from './Components/Slider'
+import Slider from './Pages/Slider'
 import {Card} from './Components/Card'
-import Footer from './Components/Footer'
+import Footer from './Pages/Footer'
 
 function App() {
-  // const [count, setCount] = useState(0)
+  
 
   return (
     <>

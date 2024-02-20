@@ -1,4 +1,4 @@
-import { DogCard } from "./DogCard";
+import { DogCard } from "../Components/DogCard";
 
 export function Card({}) {
   const dogData = {
