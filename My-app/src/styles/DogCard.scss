@@ -1,0 +1,31 @@
+
+.dog-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    margin: 16px;
+  
+    .dog-photo {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+  
+    .dog-details {
+      padding: 16px;
+  
+      .dog-name {
+        font-size: 1.5em;
+        margin-bottom: 8px;
+      }
+  
+      .dog-description {
+        font-size: 1em;
+        color: #555;
+      }
+    }
+  }
+  
