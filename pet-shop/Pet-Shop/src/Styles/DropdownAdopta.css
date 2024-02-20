@@ -1,0 +1,16 @@
+.dropdown-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content a{
+    color: white;
+    text-decoration: none;
+    background-color: #39621b;
+    padding-left: 6px;
+}
+
+.dropdown-content a:hover{
+    color: #a08134;
+    font-weight: bold;
+}

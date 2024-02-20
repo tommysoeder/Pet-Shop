@@ -1,8 +1,6 @@
 const Nav_Button = ({button}) => {
   return (
-    <div>
-      <button>{button}</button>
-      </div>
+    <button>{button}</button>
   )
 }
 
