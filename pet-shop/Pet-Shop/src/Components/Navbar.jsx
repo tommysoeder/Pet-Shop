@@ -1,6 +1,6 @@
-import Buttons from "./Buttons_Navbar"
-import Logo from "./Logo"
-import Title from "./Title"
+import Buttons from "./Components/Buttons_Navbar"
+import Logo from "./Components/Logo"
+import Title from "./Components/Title"
 
 const Navbar = () => {
   return (
