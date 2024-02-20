@@ -1,0 +1,10 @@
+.HomePage{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+*{
+    background-color: #6a9c2a;
+    margin: 0;
+}
