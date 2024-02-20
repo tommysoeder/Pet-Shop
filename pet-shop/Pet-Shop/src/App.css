@@ -1,5 +1,31 @@
-.navbar{
+.HomePage{
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.Navbar{
+  position: fixed;
+  top:0;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Buttons_Navbar{
+  display: flex;
+  /* justify-content: flex-end; */
+  margin-right: 0px;
+  gap: 8px;
+}
+
+.Logo img{
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+.Cart_Button .Contact_Button .Adopt_Button .Dona_Button .AboutUs_Button {
+  padding:8px;
 }

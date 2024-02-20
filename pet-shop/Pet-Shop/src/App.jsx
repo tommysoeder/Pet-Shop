@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import Navbar from './Navbar'
 import Slider from './Slider'
@@ -9,12 +8,12 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div className='HomePage'>
       <Navbar />
       <Slider />
       <Card />
       <Footer />
-    </>
+    </div>
   )
 }
 

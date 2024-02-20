@@ -2,8 +2,8 @@ import React from 'react'
 
 const Title = () => {
   return (
-    <div>
-        <h1>Horse Luis Animal Shelter</h1>
+    <div className='Title'>
+        <h6>Horse Luis Animal Shelter</h6>
     </div>
   )
 }

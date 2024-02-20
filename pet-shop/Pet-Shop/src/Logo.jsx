@@ -2,7 +2,7 @@ import imagen from './assets/Logo-Horse-Luis.png'; // Ajusta la ruta según la u
 
 const Logo = () => {
   return (
-    <div>
+    <div className='Logo'>
         <img src={imagen} width='150px' alt="Logo"></img>
     </div>
   )
