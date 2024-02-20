@@ -1,13 +1,12 @@
-import Buttons from "./Components/Buttons_Navbar"
-import Logo from "./Components/Logo"
-import Title from "./Components/Title"
+import Buttons_Navbar from "./Buttons_Navbar"
+import Logo from "./Logo"
+import '../Styles/Navbar.css'
 
 const Navbar = () => {
   return (
     <div className="Navbar">
         <Logo />
-        <Title />
-        <Buttons />        
+        <Buttons_Navbar />        
     </div>
   )
 }

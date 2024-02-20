@@ -1,4 +1,4 @@
-import Nav_Button from "./Components/Nav_Button"
+import Nav_Button from "./Nav_Button"
 
 const Buttons_Navbar = () => {
   return (

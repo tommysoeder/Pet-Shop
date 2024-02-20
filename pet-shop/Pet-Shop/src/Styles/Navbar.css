@@ -1,0 +1,65 @@
+.HomePage{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .Navbar{
+    position: fixed;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #39621b;
+  }
+  
+  .Buttons_Navbar{
+    display: flex;
+    background-color: #39621b;
+    margin-right: 8px;
+  }
+  
+  .Buttons_Navbar button{
+    background-color: transparent;
+    color: white;
+  }
+  
+  .Logo{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  .Logo img{
+    border-radius: 100px;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+
+  .Logo h3{
+    color: white;
+    text-align: center;
+  }
+
+  button {
+    border: 1px solid white;
+    border-top: transparent;
+    border-bottom: transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  button:hover {
+    /* border-color: #a08134; */
+    color: #a08134;
+  }
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+  
