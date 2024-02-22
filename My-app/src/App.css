@@ -3,3 +3,14 @@
   align-items: center;
   justify-content: space-around;
 }
+
+.footer{
+  display: flex;
+  background-color: grey;
+  
+}
+
+.boletincss{
+  margin: 10px;
+  color: brown;
+}
