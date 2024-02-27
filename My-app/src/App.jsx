@@ -1,20 +1,18 @@
 import './App.css'
-import Navbar from './Components/Navbar'
-import Slider from './Pages/Slider'
-import {Card} from './Components/Card'
-import Footer from './Pages/Footer'
+import { Routes, Route} from 'react-router-dom';
+import HomePage from './Pages/HomePage'
+import SobreNosotros from './Components/SobreNosotros';
+import Navbar from './Pages/Navbar'
 
 function App() {
   
-
   return (
     <>
-      <Navbar />
-      <Slider />
-      <Card />
-      <Card />
-      <Card />
-      <Footer />
+   <Navbar />
+      <Routes>
+          <Route path="/sobre-nosotros" element={<SobreNosotros />} />
+          <Route path="/" element={<HomePage />} />
+      </Routes>
     </>
   )
 }

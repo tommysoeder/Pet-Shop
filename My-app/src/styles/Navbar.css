@@ -1,3 +1,7 @@
+  *{
+    color: white;
+  }
+  
   .Navbar{
     position: fixed;
     top:0;
@@ -39,6 +43,8 @@
 
   button {
     border: 1px solid white;
+    color: white;
+    text-decoration: none;
     border-top: transparent;
     border-bottom: transparent;
     padding: 0.6em 1.2em;
@@ -49,11 +55,27 @@
     transition: border-color 0.25s;
   }
   button:hover {
-    /* border-color: #a08134; */
     color: #a08134;
   }
-  /* button:focus,
-  button:focus-visible {
-     outline: 4px auto -webkit-focus-ring-color; 
-  } */
+
+  a{
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover{
+    color: #a08134;
+  }
+
+  .dropdown{
+    position: relative;
+  }
+
+  .dropdown-content{
+    position: absolute;
+    width: 100%;
+    border-left: 1px solid white;
+    border-right:  1px solid white;
+    border-bottom:  1px solid white;;
+  }
   

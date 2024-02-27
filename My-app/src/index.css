@@ -23,6 +23,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #6a9c2a;
 }
 
 h1 {
@@ -38,7 +39,7 @@ h1 {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: #a08134;
   }
   button {
     background-color: #f9f9f9;
