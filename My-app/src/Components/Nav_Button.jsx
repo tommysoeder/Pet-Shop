@@ -1,6 +1,8 @@
-const Nav_Button = ({button}) => {
+
+
+const Nav_Button = ({link}) => {
   return (
-    <button>{button}</button>
+    <button>{link}</button>
   )
 }
 

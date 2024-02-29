@@ -1,4 +1,4 @@
-const Inicio = () => {
+const Arriba = () => {
 
     const handleScrollToTop=()=>{
         window.scrollTo({
@@ -8,8 +8,8 @@ const Inicio = () => {
     }    
 
   return (
-        <button onClick={handleScrollToTop}>Inicio</button>
+        <button className="Arriba" onClick={handleScrollToTop}>Arriba</button>
   )
 }
 
-export default Inicio
+export default Arriba

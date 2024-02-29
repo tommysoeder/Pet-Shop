@@ -1,17 +1,15 @@
 import DropdownAdopta from "./DropdownAdopta"
 import Nav_Button from "./Nav_Button"
-import Inicio from "./Inicio"
-import SobreNosotrosButton from "./SobreNosotrosButton"
+import { Link } from 'react-router-dom';
 
 const Buttons_Navbar = () => {
   return (
     <div className='Buttons_Navbar'>
-        {/* <Nav_Button button="Inicio"/> */}
-        <Inicio />
+        <Nav_Button link={<Link to="/">Inicio</Link>}/>
         <DropdownAdopta button="Adopta"/>
-        <Nav_Button button="Dona"/>
-        <SobreNosotrosButton/>
-        <Nav_Button button="Carrito"/>
+        <Nav_Button link={<Link to="/dona">Dona</Link>}/>
+        <Nav_Button link={<Link to="/sobre-nosotros">Sobre Nosotros</Link>}/>
+        <Nav_Button link={<Link to="/carrito">Carrito</Link>}/>
     </div>
   )
 }
