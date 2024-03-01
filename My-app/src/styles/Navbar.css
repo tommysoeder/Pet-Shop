@@ -51,6 +51,10 @@
     background-color: #39621b;
   }
 
+  .Logo h3:hover{
+    cursor:default;
+  }
+
   button {
     border: 1px solid white;
     color: white;

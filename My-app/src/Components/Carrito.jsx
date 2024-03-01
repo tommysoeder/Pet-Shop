@@ -4,7 +4,7 @@ const Carrito = () => {
   return (
     <div>
         <img src={imagen}width='400px'></img>
-        </div>
+    </div>
   )
 }
 
