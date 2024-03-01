@@ -8,6 +8,7 @@ import Donacion from './Components/Donacion';
 import Agradecimiento from './Components/Agradecimiento';
 import AdoptaPerro from './Components/AdoptaPerro';
 import AdoptaGato from './Components/AdoptaGato';
+import Carrito from './Components/Carrito';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/donated" element={<Agradecimiento />} />
         <Route path="/adopta/perros" element={<AdoptaPerro />} />
         <Route path="/adopta/gatos" element={<AdoptaGato />} />
+        <Route path="/carrito" element={<Carrito />} />
     </Routes>
     <Footer />    
     </>

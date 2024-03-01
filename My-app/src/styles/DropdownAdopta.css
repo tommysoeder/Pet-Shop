@@ -1,7 +1,8 @@
 .dropdown-content{
     display: flex;
     flex-direction: column;
-    border-style: none;
+    border-style: 1px solid black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9) inset;
 }
 
 .dropdown-content button{

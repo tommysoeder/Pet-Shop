@@ -6,6 +6,7 @@
     background-color: #39621b;
     max-width:400px;
     padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
 }
 
 .formulario-donacion label{
@@ -32,4 +33,5 @@
     border-style: none;
     margin-top: 5px;
     margin-left: 110px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
