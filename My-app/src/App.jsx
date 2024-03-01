@@ -1,7 +1,7 @@
 import './App.css'
-import Navbar from './Components/Navbar'
+import Navbar from './Pages/Navbar'
 import Slider from './Pages/Slider'
-import {Card} from './Components/Card'
+import {Card} from './Pages/Card'
 import Footer from './Pages/Footer'
 
 function App() {
@@ -11,8 +11,6 @@ function App() {
     <>
       <Navbar />
       <Slider />
-      <Card />
-      <Card />
       <Card />
       <Footer />
     </>
