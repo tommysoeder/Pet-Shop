@@ -23,7 +23,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #6a9c2a;
+  background-color: #7a9851;
+
 }
 
 h1 {
@@ -44,14 +45,14 @@ h1 {
 
 
 @media (prefers-color-scheme: light) {
-  :root {
+  /* :root {
     color: #213547;
     background-color: #ffffff;
-  }
-  a:hover {
+  } */
+  /* a:hover {
     color: #a08134;
-  }
-  button {
+  } */
+  /* button {
     background-color: #f9f9f9;
-  }
+  } */
 } 

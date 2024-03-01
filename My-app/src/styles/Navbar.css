@@ -27,12 +27,21 @@
     display: flex;
     align-items: center;
     background-color: transparent;
+    height:70px;
+    overflow: hidden;
   }
 
   .Logo img{
     border-radius: 100px;
     overflow: hidden;
     margin-right: 10px;
+    height: 70px;
+    width: auto;
+  }
+
+  .Logo button{
+    background-color: transparent;
+    border-style: none;
   }
 
   .Logo h3{

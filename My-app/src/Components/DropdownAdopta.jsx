@@ -1,5 +1,8 @@
 import { useState } from 'react';
-import '../Styles/DropdownAdopta.css'
+import '../styles/DropdownAdopta.css'
+import { Link } from 'react-router-dom';
+import Nav_Button from './Nav_Button';
+
 const DropdownAdopta = ({button}) => {
    
       const [isOpen, setIsOpen] = useState(false);
@@ -17,8 +20,8 @@ const DropdownAdopta = ({button}) => {
           <button>{button}</button>
           {isOpen && (
             <div className="dropdown-content">
-              <a href="#">Perros</a>
-              <a href="#">Gatos</a> 
+              <Nav_Button link={<Link to="/adopta/perros">Perros</Link>}/>
+              <Nav_Button link={<Link to="/adopta/gatos">Gatos</Link>}/> 
             </div>
           )}
         </div>

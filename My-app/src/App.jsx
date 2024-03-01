@@ -6,6 +6,8 @@ import Navbar from './Pages/Navbar'
 import Footer from './Pages/Footer'
 import Donacion from './Components/Donacion';
 import Agradecimiento from './Components/Agradecimiento';
+import AdoptaPerro from './Components/AdoptaPerro';
+import AdoptaGato from './Components/AdoptaGato';
 
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/dona" element={<Donacion />} />
         <Route path="/donated" element={<Agradecimiento />} />
+        <Route path="/adopta/perros" element={<AdoptaPerro />} />
+        <Route path="/adopta/gatos" element={<AdoptaGato />} />
     </Routes>
     <Footer />    
     </>
