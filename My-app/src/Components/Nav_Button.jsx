@@ -1,5 +1,3 @@
-
-
 const Nav_Button = ({link}) => {
   return (
     <button>{link}</button>

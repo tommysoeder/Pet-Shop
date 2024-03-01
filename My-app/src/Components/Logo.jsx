@@ -1,4 +1,4 @@
-import imagen from '../assets/dog_logo.png'; // Ajusta la ruta según la ubicación real de la imagen
+import imagen from '../assets/dog_logo.png'; 
 
 const Logo = () => {
   return (
