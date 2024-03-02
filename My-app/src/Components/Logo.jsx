@@ -1,4 +1,4 @@
-import imagen from './assets/Logo-Horse-Luis.png'; // Ajusta la ruta según la ubicación real de la imagen
+import imagen from '../assets/Logo-Horse-Luis.png'; // Ajusta la ruta según la ubicación real de la imagen
 
 const Logo = () => {
   return (
