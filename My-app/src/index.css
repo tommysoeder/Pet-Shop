@@ -31,17 +31,38 @@ h1 {
 }
 
 .Arriba{
+  display: none;
   position: fixed;
   bottom: 10px;
-  right: 8px;
-  border-radius: 5px;
-  background-color:#39621b;
-  border-style: none;
-  color: white;
+  right: 10px;
+  width: 5px;
+  height: 5px;
+  background-color: transparent;
+  border: none;
 }
 
-.Arriba:hover{
+.Arriba-active {
+  display: flex;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  background-image: url('../assets/unnamed.png');
+  background-size: cover;
+  overflow: hidden;
+}
+
+.Arriba-active img{
+  width:auto;
+}
+
+.Arriba-active:hover{
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+  border-radius: 10px;
 }
 
 
