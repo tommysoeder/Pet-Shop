@@ -5,7 +5,7 @@ import { NumeroTelefono } from "./NumeroTelefono";
 export function InformacionContacto(){
 
     return(
-        <div>
+        <div className="PrimInfoFooter">
             <DireccionContacto/>
             <NumeroTelefono/>
             <CorreoElectronico/>
