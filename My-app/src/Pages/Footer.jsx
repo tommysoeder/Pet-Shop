@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 
 import { EnlacesRapidos } from "../Components/EnlacesRapidos"
@@ -7,8 +6,6 @@ import { NuestroBoletin } from "../Components/NuestroBoletin"
 import { CopyrightFooter } from '../Components/CopyrightFooter';
 
 
-=======
->>>>>>> Development
 const Footer = () => {
   return (
     <div className="footer">
