@@ -1,21 +1,12 @@
-import Home_Button from "../Components/Home_Button"
+import Buttons_Navbar from "../Components/Buttons_Navbar"
 import Logo from "../Components/Logo"
-import Adopt_Button from "../Components/Adopt_Button"
-import Dona_Button from "../Components/Dona_Button"
-import Contacta_Button from "../Components/Contact_Button"
-import Cart_Button from "../Components/Cart_Button"
-import Title from "../Components/Title"
+import '../styles/Navbar.css'
 
 const Navbar = () => {
   return (
-    <div class="navbar">
+    <div className="Navbar">
         <Logo />
-        <Title />
-        <Home_Button />
-        <Adopt_Button />
-        <Dona_Button />
-        <Contacta_Button />
-        <Cart_Button />
+        <Buttons_Navbar />        
     </div>
   )
 }
