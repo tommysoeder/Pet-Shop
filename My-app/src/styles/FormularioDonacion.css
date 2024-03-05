@@ -14,9 +14,12 @@
 }
 
 .formulario-donacion input{
-    background-color: transparent;
-    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    background-color: #7a9851;
+    border-style: none;
     border-radius: 5px;
+    width: 150px;
 }
 
 .formulario-donacion div{
@@ -24,14 +27,15 @@
 }
 
 #amount{
-    max-width: 40px;
+    width: 50px;
 }
 
 .dona-button button{
+    display: flex;
     background-color: #6a9c2a;
     border-radius: 5px;
     border-style: none;
-    margin-top: 5px;
-    margin-left: 110px;
+    margin-top: 10px;
+    /* margin-left: 10px; */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
