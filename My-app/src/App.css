@@ -7,10 +7,28 @@
 .footer{
   display: flex;
   background-color: grey;
+  justify-content: space-between
+  
   
 }
 
 .boletincss{
   margin: 10px;
   color: brown;
+
+}
+
+.CopyCss{
+display: flex;
+align-items: flex-end;
+margin-right: 15px;
+
+}
+.PrimInfoFooter{
+  margin-left: 10px;
+}
+
+.NombreIcono{
+  display: inline;
+  margin-left: 5px;
 }

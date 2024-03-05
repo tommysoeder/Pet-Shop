@@ -2,8 +2,8 @@ export function DireccionContacto(){
 
     return(
     <div>
-        <h2>Ciudad</h2>
-        <p>Ubicacion Exacta</p>
+        <h2>¡Encuentranos!</h2>
+        <p> <i class="fa-solid fa-location-dot"></i> Ubicacion Exacta</p>
     </div>)
 
 }
