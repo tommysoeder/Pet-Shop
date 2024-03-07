@@ -16,6 +16,12 @@ import AdoptaPerro from './Components/AdoptaPerro';
 import AdoptaGato from './Components/AdoptaGato';
 import Carrito from './Components/Carrito';
 
+import Donacion from './Components/Donacion';
+import Agradecimiento from './Components/Agradecimiento';
+import AdoptaPerro from './Components/AdoptaPerro';
+import AdoptaGato from './Components/AdoptaGato';
+import Carrito from './Components/Carrito';
+
 
 function App() {
   
