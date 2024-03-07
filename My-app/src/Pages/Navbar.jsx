@@ -8,7 +8,7 @@ import Title from "../Components/Title"
 
 const Navbar = () => {
   return (
-    <div class="navbar">
+    <div className="navbar">
         <Logo />
         <Title />
         <Home_Button />
