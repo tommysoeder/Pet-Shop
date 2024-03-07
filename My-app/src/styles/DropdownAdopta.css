@@ -1,0 +1,24 @@
+.dropdown-content{
+    display: flex;
+    flex-direction: column;
+    border-style: 1px solid black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9) inset;
+}
+
+.dropdown-content button{
+    color: white;
+    text-decoration: none;
+    background-color: #39621b;
+    padding-left: 6px;
+    border-style: none;
+    width:auto;
+}
+
+.dropdown-content a:hover{
+    background-color: #656d2b;
+    color: white;
+}
+
+.dropdown-content button:hover{
+    background-color: #656d2b;
+}

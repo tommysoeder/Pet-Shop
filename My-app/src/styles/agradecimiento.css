@@ -1,0 +1,17 @@
+.agradecimiento{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 160px;
+    padding-left:200px;
+    padding-right:200px;
+    margin-left:0;
+    padding-top: 90px;
+    text-align: center;
+}
+
+.agradecimiento img{
+    width:600px;
+    display: flex;
+}
