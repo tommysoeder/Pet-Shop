@@ -8,8 +8,7 @@ const HomePage = () => {
     <div>   
       <Slider />
       <Card />
-      <Card />
-      <Card />
+      
       <Arriba />
     </div>
   )

@@ -25,8 +25,7 @@ function App() {
         <Route path="/adopta/gatos" element={<AdoptaGato />} />
         <Route path="/carrito" element={<Carrito />} />
       </Routes>
-      <Slider />
-      <Card />
+      
       
       <Footer />
     </>
