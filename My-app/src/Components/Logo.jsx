@@ -1,9 +1,12 @@
-import imagen from '../assets/Logo-Horse-Luis.png'; // Ajusta la ruta según la ubicación real de la imagen
+import imagen from '../assets/dog_logo.png'; 
+import Nav_Button from './Nav_Button';
+import { Link } from 'react-router-dom';
 
 const Logo = () => {
   return (
-    <div>
-        <img src={imagen} width='150px' alt="Logo"></img>
+    <div className='Logo'>
+      <Nav_Button link={<Link to="/"><img src={imagen} width='80px' alt="Logo"></img></Link>}/>     
+        <h3>Horse Luis Animal Shelter</h3>      
     </div>
   )
 }

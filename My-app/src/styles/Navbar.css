@@ -1,0 +1,96 @@
+  *{
+    color: white;
+  }
+  
+  .Navbar{
+    position: fixed;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #39621b;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+    z-index: 100;
+  }
+  
+  .Buttons_Navbar{
+    display: flex;
+    background-color: #39621b;
+    margin-right: 8px;
+  }
+  
+  .Buttons_Navbar button{
+    background-color: #39621b;
+    color: white;
+  }
+  
+  .Logo{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    height:70px;
+    overflow: hidden;
+  }
+
+  .Logo img{
+    border-radius: 100px;
+    overflow: hidden;
+    margin-right: 10px;
+    height: 70px;
+    width: auto;
+  }
+
+  .Logo button{
+    background-color: transparent;
+    border-style: none;
+  }
+
+  .Logo h3{
+    color: white;
+    text-align: center;
+    background-color: #39621b;
+  }
+
+  .Logo h3:hover{
+    cursor:default;
+  }
+
+  button {
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    border-top: transparent;
+    border-bottom: transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  button:hover {
+    color: #a08134;
+  }
+
+  a{
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover{
+    color: #a08134;
+  }
+
+  .dropdown{
+    position: relative;
+  }
+
+  .dropdown-content{
+    position: absolute;
+    width: 100%;
+    border-left: 1px solid white;
+    border-right:  1px solid white;
+    border-bottom:  1px solid white;;
+  }
+  

@@ -10,10 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@thatapicompany/thecatapi": "^1.0.2",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "react-transition-group": "^4.4.5",
+=======
+    "react-router-dom": "^6.22.2",
+>>>>>>> 4925973678998105e89883527eea6743818d7c5e
     "sass": "^1.71.0"
   },
   "devDependencies": {
