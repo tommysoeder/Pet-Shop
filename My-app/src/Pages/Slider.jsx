@@ -3,7 +3,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import lokaso from '../assets/lokaso.jpg';
 import gatorro from '../assets/gatorro.jpg';
 import horseluis from '../assets/horseluis.jpg';
-
+import '../styles/Slider.scss'
 
 const Slider = () => {
   const images = [lokaso, gatorro, horseluis];
@@ -12,7 +12,7 @@ const Slider = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-    }, 3000);
+    }, 6000);
 
     return () => clearInterval(intervalId);
   }, []);
