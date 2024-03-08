@@ -1,13 +1,14 @@
 import Arriba from "../Components/Arriba"
 import Slider from './Slider'
 import {Card} from './Card'
+import "../styles/HomePage.scss"
 
 
 const HomePage = () => {
   return (
-    <div>   
+    <div className="homePage-style">   
       <Slider />
-      <Card />
+      <Card className="cardStyle"/>
       
       <Arriba />
     </div>

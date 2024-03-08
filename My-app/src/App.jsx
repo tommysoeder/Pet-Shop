@@ -1,7 +1,5 @@
 import "./App.css";
 import Navbar from "./Pages/Navbar";
-import Slider from "./Pages/Slider";
-import { Card } from "./Pages/Card";
 import Footer from "./Pages/Footer";
 import HomePage from "./Pages/HomePage"
 import Donacion from "./Components/Donacion";
@@ -25,8 +23,6 @@ function App() {
         <Route path="/adopta/gatos" element={<AdoptaGato />} />
         <Route path="/carrito" element={<Carrito />} />
       </Routes>
-      
-      
       <Footer />
     </>
   );
