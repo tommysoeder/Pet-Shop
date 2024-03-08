@@ -1,0 +1,48 @@
+/* Slider.css */
+
+.slider-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-container {
+  width: 90%;
+  max-width: 600px;
+  max-height: 400px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+.slider-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transform-origin: top; /* Ajusta el origen de la transformación */
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out; /* Ajusta la transición */
+}
+
+.fade-enter {
+  opacity: 0.01;
+  transform: scale(0.8); /* Ajusta la escala inicial para que la imagen entre de manera suave */
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: scale(1); /* Escala completa cuando la imagen está completamente visible */
+  transition: opacity 800ms ease-in-out, transform 800ms ease-in-out;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: scale(1); /* Escala completa al principio de la salida */
+}
+
+.fade-exit-active {
+  opacity: 0.01;
+  transform: scale(0.8); /* Ajusta la escala para que la imagen salga de manera suave */
+  transition: opacity 800ms ease-in-out, transform 800ms ease-in-out;
+}
