@@ -5,6 +5,6 @@
   }
 
 *{
-    background-color: #7a9851;
+    background-color: var(--verde-fondo);
     margin: 0;
 }

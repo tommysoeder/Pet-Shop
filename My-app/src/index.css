@@ -3,18 +3,26 @@
   line-height: 1.5;
   font-weight: 400;
 
+  --marron:#a08134;
+  --verde-claro:#6a9c2a;
+  --verde-pardo:#656d2b;
+  --verde-oscuro:#39621b;
+  --verde-fondo:#7a9851;
+  --marron-claro:#c8a668;
+  --blanco:rgb(255, 255, 255);
+
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
-  font-synthesis: none;
+  /* font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
 a:hover {
-  color: #a08134;
+  color: var(--marron);
 }
 
 body {
@@ -23,7 +31,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #7a9851;
+  background-color: var(--verde-fondo);
 
 }
 
@@ -62,9 +70,9 @@ h1 {
 }
 
 .Arriba-active:hover{
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
   cursor: pointer;
   border-radius: 10px;
+  transform: scale(1.2);
 }
 
 
