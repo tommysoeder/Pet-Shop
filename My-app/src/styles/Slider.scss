@@ -5,15 +5,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 0 auto;
 }
 
 .slider-container {
   width: 90%;
   max-width:100%;
-  max-height: 80vh;
+  max-height: 88vh;
   overflow: hidden;
   position: relative;
   margin: 0 auto;
+  margin-left: 10%;
 }
 
 .slider-container img {
