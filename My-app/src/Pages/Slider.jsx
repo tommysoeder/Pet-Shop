@@ -7,9 +7,9 @@ import horseluis from '../assets/horseluis.jpg'
 
 function Slider(){
   const images = [
-    'lokaso.jpg',
-    'gatorro.jpg',
-    'horseluis.jpg',
+    lokaso,
+    gatorro,
+    horseluis,
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
@@ -17,19 +17,24 @@ function Slider(){
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-    }, 3000);
+    
+    }, 6000);
+    console.log("holi")
 
-    return () => clearInterval(intervalId); // Limpiar el intervalo al desmontar el componente
-  }, []); // El segundo argumento vacío asegura que el efecto solo se ejecute una vez al montar el componente
+    return () => clearInterval(intervalId);
+  }, []); 
 
   return (
-    <div className="slider">
+    <div className='slider-todo'>
+      <div className="slider-container">
       <TransitionGroup>
         <CSSTransition key={currentImage} timeout={500} classNames="fade">
           <img src={images[currentImage]} alt={`Slide ${currentImage + 1}`} />
         </CSSTransition>
       </TransitionGroup>
     </div>
+    </div>
+    
   );
 };
 
