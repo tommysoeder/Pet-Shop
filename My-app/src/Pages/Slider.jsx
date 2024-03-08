@@ -3,7 +3,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import lokaso from '../assets/lokaso.jpg';
 import gatorro from '../assets/gatorro.jpg';
 import horseluis from '../assets/horseluis.jpg';
-import style from '../assets/Slider.scss'
+
 
 const Slider = () => {
   const images = [lokaso, gatorro, horseluis];
