@@ -3,7 +3,7 @@
     align-items: center;
     flex-direction: column;
     margin-top: -40px;
-    background-color: #39621b;
+    background-color: var(--verde-oscuro);
     max-width:400px;
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
@@ -16,7 +16,7 @@
 .formulario-donacion input{
     display: flex;
     justify-content: center;
-    background-color: #7a9851;
+    background-color: var(--verde-fondo);
     border-style: none;
     border-radius: 5px;
     width: 150px;
@@ -32,10 +32,9 @@
 
 .dona-button button{
     display: flex;
-    background-color: #6a9c2a;
+    background-color: var(--verde-claro);
     border-radius: 5px;
     border-style: none;
     margin-top: 10px;
-    /* margin-left: 10px; */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
