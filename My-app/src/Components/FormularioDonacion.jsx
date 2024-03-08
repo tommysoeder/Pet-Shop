@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import '../styles/FormularioDonacion.css'
-import Nav_Button from './Nav_Button';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 const FormularioDonacion = () => {
@@ -11,16 +11,16 @@ const FormularioDonacion = () => {
     const [cardNumber, setCardNumber] = useState('');
     const [expDate, setExpDate] = useState('');
     const [securityCode, setSecurityCode] = useState('');
-  
+    const [showAlert, setShowAlert] = useState(false);
+    const [submitted, setSubmitted] = useState(false); 
+
     const handleSubmit = (e) => {
       e.preventDefault();
-  
-      setName('');
-      setAmount('');
-      setEmail('');
-      setCardNumber('');
-      setExpDate('');
-      setSecurityCode('');
+
+      if (!name || !email || !amount || !cardNumber || !expDate || !securityCode){
+        setShowAlert(true); 
+        return; 
+      }
 
       console.log('Nombre:', name);
       console.log('Email:', email);
@@ -28,6 +28,14 @@ const FormularioDonacion = () => {
       console.log('Número de Tarjeta:', cardNumber);
       console.log('Fecha de Caducidad:', expDate);
       console.log('CVV:', securityCode);
+
+      setName('');
+      setAmount('');
+      setEmail('');
+      setCardNumber('');
+      setExpDate('');
+      setSecurityCode('');
+      setSubmitted(true);
     };
 
   return (
@@ -61,11 +69,13 @@ const FormularioDonacion = () => {
           <input type="text" id="securityCode" value={securityCode} onChange={(e) => setSecurityCode(e.target.value)} required/>
         </div>
         <div className='dona-button'>
-        <Nav_Button link={<Link to="/donated">Dona</Link>}/>
+          <button type="submit">Dona</button>
         </div>
       </form>
+      {showAlert && <div className="alert">Por favor, rellena todos los campos.</div>}
+      {submitted && <Navigate to="/donated" />} 
     </div>
   )
 }
 
-export default FormularioDonacion
+export default FormularioDonacion;

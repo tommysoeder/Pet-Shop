@@ -1,15 +1,39 @@
-const Arriba = () => {
+import { useState, useEffect } from 'react';
+import imagen from '../assets/unnamed.png'
+import '../index.css';
 
-    const handleScrollToTop=()=>{
-        window.scrollTo({
-            top:0,
-            behavior:'smooth'
-        })
-    }    
+const Arriba = () => {
+  const [mostrarBoton, setMostrarBoton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if  (window.pageYOffset > 20) { 
+        setMostrarBoton(true);
+      } else {
+        setMostrarBoton(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+   
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
 
   return (
-        <button className="Arriba" onClick={handleScrollToTop}>Arriba</button>
-  )
-}
+    <div className={mostrarBoton ? 'Arriba-active' : 'Arriba'} onClick={scrollToTop}>
+        <img src={imagen}/>
+    </div>
+  );
+};
 
-export default Arriba
+export default Arriba;
