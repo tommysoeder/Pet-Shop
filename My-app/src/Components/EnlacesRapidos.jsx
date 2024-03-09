@@ -1,4 +1,5 @@
-
+import '@fortawesome/fontawesome-free/css/all.css';
+import {Link} from "react-router-dom"
 
 export function EnlacesRapidos(){
 
@@ -6,17 +7,18 @@ export function EnlacesRapidos(){
     return(
         <div>
             <h2>Enlaces rapidos</h2>
-            <a href=""><i class="fa-solid fa-dog"></i> Perros adultos</a>  
+            
+            <Link to="/adopta/perros"><i class="fa-solid fa-dog"></i> Perros</Link>  
             <hr /> 
-            <a href=""><i class="fa-solid fa-paw"></i> Cachorros</a>
+            <Link to="/adopta/gatos"><i class="fa-solid fa-paw"></i> Gatos</Link>
             <hr />
             <a href="">formulario Adopcion</a> 
             <hr />
-            <a href=""> <i class="fa-solid fa-house"></i> Inicio</a> 
+            <Link to=""> <i class="fa-solid fa-house"></i> Inicio</Link> 
             <hr />
-            <a href=""><i class="fa-brands fa-paypal"></i> Dona</a>
+            <Link to="/dona"><i class="fa-brands fa-paypal"></i> Dona</Link>
             <hr />
-            <a href=""> <i class="fa-solid fa-cart-shopping"></i> Carrito</a>
+            <Link to="/carrito"> <i class="fa-solid fa-cart-shopping"></i> Carrito</Link>
         
             
 

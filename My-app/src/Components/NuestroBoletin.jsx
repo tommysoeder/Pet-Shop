@@ -8,7 +8,7 @@ export function NuestroBoletin(){
             <h3>Email:</h3>
             <input placeholder="Introduzca su email" type="text" />
             <button>Suscribete</button>
-            <p>Aviso legal | Política de Privacidad | Política de cookies</p>
+            <p className="copyFooter">Aviso legal | Política de Privacidad | Política de cookies</p>
         </div>
     )
 

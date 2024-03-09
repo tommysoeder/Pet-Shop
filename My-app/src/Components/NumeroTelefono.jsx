@@ -2,6 +2,7 @@ import { useState } from "react"
 
 
 
+
 export function NumeroTelefono(){
     const [seeInstagram,setSeeInstagram]= useState(false);
     const [seeTelefono,setSeeTelefono]=useState(false)
