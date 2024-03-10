@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { DogCard, ImagesDogs } from "../Components/DogCard";
-
+import { DogCard } from "../Components/DogCard";
+import { ImagesDogs } from "../Components/utils/DogApi"; // Cambia la importación según la ubicación de tu función ImagesDogs
 import '../styles/Card.scss';
 
-export function Card({}) {
+export function Card() {
   const [dogImages, setDogImages] = useState([]);
 
   useEffect(() => {
@@ -18,12 +18,12 @@ export function Card({}) {
 
     fetchDogImages();
   }, []);
-  
- 
+
   return (
     <div className="cards-container">
       {dogImages.map((dog, index) => (
-        <DogCard className="card"
+        <DogCard
+          className="card"
           key={index}
           photo={dog.url}
           name={dog.breeds[0].name}
