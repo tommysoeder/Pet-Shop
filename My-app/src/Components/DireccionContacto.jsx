@@ -11,7 +11,7 @@ export function DireccionContacto(){
     <div>
         <h2>¡Encuentranos!</h2>
         <i class="fa-solid fa-location-dot"  onClick={handleUbiToggle}></i>
-        { ubi && <p className="NombreIcono">ubicacion random </p>} 
+        { ubi && <p className="NombreIcono">Paris,Francia </p>} 
     </div>
     )
     

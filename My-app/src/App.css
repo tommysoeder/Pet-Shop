@@ -6,10 +6,10 @@
 
 .footer{
   display: flex;
-  background-color: grey;
+  
   flex-wrap: wrap;
   padding-left: 5%;
-  padding-left: 5%;
+  
   
   
 }
@@ -59,15 +59,21 @@ margin-right: 15px;
 }
 
 .ContenedorFormulario{
-  background-color: black;
+  background-color:#656d2b;
   max-width: 90%;
   margin-left: 5%;
-  border: solid red 2px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   
 }
+.AdoptaGatoh{
+  color: #c8a668
+
+  ;
+}
+
 
 .requiredSpan{
   color: red;
@@ -79,6 +85,7 @@ margin: 10px;
 display: flex;
 flex-direction: row;
 justify-content: center;
+margin-left: 15%;
 }
 
 .InputForm1{
@@ -108,6 +115,7 @@ justify-content: center;
 
 .FormDesarrollar{
   margin: 10px;
+  margin-left: 4%;
 }
 
 .BotonFormulario{

@@ -12,8 +12,6 @@ export function EnlacesRapidos(){
             <hr /> 
             <Link to="/adopta/gatos"><i class="fa-solid fa-paw"></i> Gatos</Link>
             <hr />
-            <a href="">formulario Adopcion</a> 
-            <hr />
             <Link to=""> <i class="fa-solid fa-house"></i> Inicio</Link> 
             <hr />
             <Link to="/dona"><i class="fa-brands fa-paypal"></i> Dona</Link>
