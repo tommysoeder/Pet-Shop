@@ -1,5 +1,5 @@
 
-.dog-card {
+.animal-card {
     
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -9,28 +9,28 @@
     margin: 16px;
     background-color: #a08134;
   
-    .dog-photo {
+    .animal-photo {
       width: 100%;
       height: 200px;
       object-fit: cover;
     }
   
-    .dog-details {
+    .animal-details {
       padding: 16px;
   
-      .dog-name {
+      .animal-name {
         font-size: 1.5em;
         margin-bottom: 8px;
         height: 50px;
       }
   
-      .dog-description {
+      .animal-description {
         font-size: 1em;
-        color: #555;
+        color: #464646;
       }
     }
   }
-  .dog-card:hover {
+  .animal-card:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transform: scale(1.1);
     transition: all 0.3s linear;

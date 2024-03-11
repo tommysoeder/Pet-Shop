@@ -1,6 +1,6 @@
 import { TheCatAPI } from "@thatapicompany/thecatapi";
 
-const API_KEY = "live_vniUOyqjQaDJavpUrqat5XB4taGYzN2q6xRNjtl8cWsdUBDGBnHd1ByUcMukiKaj";
+const API_KEY = import.meta.env.VITE_REACT_APP_DOG_API_KEY;
 const theCatAPI = new TheCatAPI(API_KEY, {
     host: "https://api.thedogapi.com/v1",
   });
