@@ -1,8 +1,10 @@
 import SeccionMascota from './SeccionMascota'
 
+
 const AdoptaPerro = () => {
   return (
-    <SeccionMascota/>
+    <div>Adopta un Perro
+    </div>
   )
 }
 
