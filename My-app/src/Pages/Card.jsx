@@ -41,18 +41,22 @@ export function Card() {
         <AnimalCard
           className="card"
           key={index}
+          id={dog.id}
           photo={dog.url}
           name={dog.breeds[0].name}
           description={dog.breeds[0].temperament}
+          tipo={"perros"}
         />
       ))}
       {catImages.map((cat, index) => (
         <AnimalCard
           className="card"
           key={index}
+          id={cat.id}
           photo={cat.url}
           name={cat.breeds[0].name}
           description={cat.breeds[0].temperament}
+          tipo={"gatos"}
         />
       ))}
     </div>
