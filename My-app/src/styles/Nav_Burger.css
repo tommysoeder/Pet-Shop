@@ -1,0 +1,10 @@
+.nav-burger img{
+    background-color: var(--verde-oscuro);
+    color: var(--blanco);
+    z-index: 1;
+}
+
+.nav-burger button{
+    background-color: var(--verde-oscuro);
+    border-style: none;
+}
