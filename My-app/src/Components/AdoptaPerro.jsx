@@ -1,5 +1,3 @@
-import SeccionMascota from './SeccionMascota'
-
 
 const AdoptaPerro = () => {
   return (

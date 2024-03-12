@@ -1,10 +1,27 @@
-.nav-burger img{
-    background-color: var(--verde-oscuro);
-    color: var(--blanco);
-    z-index: 1;
-}
-
-.nav-burger button{
+.Nav_Burger button{
     background-color: var(--verde-oscuro);
     border-style: none;
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+}
+
+.adopta{
+    width: 100%;
+}
+  
+.burger-content {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    flex-direction: column;
+    left: 0;
+    width: 100%;
+    align-items: center;
+  }
+
+.burger-content button{
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
