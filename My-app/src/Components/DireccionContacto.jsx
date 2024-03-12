@@ -9,9 +9,9 @@ export function DireccionContacto(){
 
     return(
     <div>
-        <h2>¡Encuentranos!</h2>
+        <h2>¡Encuéntranos!</h2>
         <i class="fa-solid fa-location-dot"  onClick={handleUbiToggle}></i>
-        { ubi && <p className="NombreIcono">Paris,Francia </p>} 
+        { ubi && <p className="NombreIcono">París,Francia </p>} 
     </div>
     )
     

@@ -8,9 +8,9 @@ export function CorreoElectronico(){
     }
     return(
         <div>
-            <h2>Solicite Informacion</h2>
+            <h2>Solicite Información</h2>
              <i class="fa-solid fa-envelope" onClick={toggleRefugio}></i>
-             {textoRefugio && <p className="NombreIcono">refugioanimales@correo.com </p> } 
+             {textoRefugio && <p className="NombreIcono">HorseLuisShelter@correo.com </p> } 
         </div>
     )
 }
