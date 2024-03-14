@@ -2,6 +2,7 @@ import { useState } from 'react';
 import '../styles/DropdownAdopta.css'
 import { Link } from 'react-router-dom';
 import Nav_Button from './Nav_Button';
+import '../styles/AdoptaResponsive.css'
 
 const AdoptaResponsive = ({button}) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -10,8 +11,13 @@ const AdoptaResponsive = ({button}) => {
         setIsOpen(!isOpen);
     };
 
+    const closeDropdown = () => {
+        setIsOpen(false);
+        onClick(); 
+      };
+
     return (
-        <div className="dropdown">
+        <div className="dropdown-mobile">
             <button onClick={handleClick}>
                 {button}
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,9 +30,9 @@ const AdoptaResponsive = ({button}) => {
                 </svg>
             </button>
             {isOpen && (
-                <div className="dropdown-content">
-                    <Nav_Button link={<Link to="/adopta/perros">Perros</Link>} />
-                    <Nav_Button link={<Link to="/adopta/gatos">Gatos</Link>} />
+                <div className="dropdown-mobile-content">
+                    <Nav_Button link={<Link to="/adopta/perros" onClick={closeDropdown}>Perros</Link>} />
+                    <Nav_Button link={<Link to="/adopta/gatos"onClick={closeDropdown}>Gatos</Link>} />
                 </div>
             )}
         </div>
