@@ -9,7 +9,6 @@ const Buttons_Navbar = () => {
         <DropdownAdopta button="Adopta"/>
         <Nav_Button link={<Link to="/dona">Dona</Link>}/>
         <Nav_Button link={<Link to="/sobre-nosotros">Sobre Nosotros</Link>}/>
-        <Nav_Button link={<Link to="/carrito">Carrito</Link>}/>
     </div>
   )
 }

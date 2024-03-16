@@ -1,9 +1,16 @@
-import React from 'react'
+<<<<<<< HEAD
+import React, { useState } from 'react'
+
+const AdoptaPerro = (/*props*/) => {
+
+=======
 
 const AdoptaPerro = () => {
   return (
-    <h1>Adopta un Perro</h1>
+    <div>Adopta un Perro
+    </div>
   )
+>>>>>>> navbar
 }
 
 export default AdoptaPerro

@@ -9,7 +9,6 @@ const HomePage = () => {
     <div className="homePage-style">   
       <Slider />
       <Card className="cardStyle"/>
-      
       <Arriba />
     </div>
   )

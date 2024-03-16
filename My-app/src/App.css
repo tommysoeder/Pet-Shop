@@ -1,0 +1,126 @@
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer{
+  display: flex;
+  background-color: #656d2b;
+  
+  flex-wrap: wrap;
+  padding-left: 5%;
+  
+  
+  
+}
+
+@media(max-width:768px){
+  .footer > div {
+    width: 40% !important; /* Por defecto, cada componente ocupa el 25% del ancho del footer */
+    margin: 10px; /* Agrega un margen alrededor de cada componente */
+    box-sizing: border-box; }
+}
+@media(max-width:570px){
+  .footer > div {
+    width: 90% !important; /* Por defecto, cada componente ocupa el 25% del ancho del footer */
+    margin: 10px; /* Agrega un margen alrededor de cada componente */
+    box-sizing: border-box; }}
+
+.footer > div {
+  width: 30%; /* Por defecto, cada componente ocupa el 25% del ancho del footer */
+  margin: 10px; /* Agrega un margen alrededor de cada componente */
+  box-sizing: border-box; }
+
+
+.boletincss{
+  margin: 10px;
+  color: brown;
+
+}
+
+.CopyCss{
+display: flex;
+align-items: flex-end;
+margin-right: 15px;
+
+}
+.PrimInfoFooter{
+  margin-left: 10px;
+}
+
+.NombreIcono{
+  display: inline;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.copyFooter{
+  cursor: pointer;
+  
+}
+
+.ContenedorFormulario{
+  background-color:#656d2b;
+  max-width: 90%;
+  margin-left: 5%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.AdoptaGatoh{
+  color: #c8a668
+
+  ;
+}
+
+
+.requiredSpan{
+  color: red;
+  margin-left: 3px;
+}
+
+.CategoriaFormulario{
+margin: 10px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin-left: 15%;
+}
+
+.InputForm1{
+  max-width: 300px;
+  margin-right: 20px;
+  width: 100%;
+ 
+}
+.PreguntaFormIZQ{
+  display: flex;
+  flex-direction: column;
+  margin:10px;
+}
+
+.PreguntaFormDER{
+  display: flex;
+  flex-direction: column;
+  margin:10px;
+}
+
+@media(min-width:768px){
+  .PreguntaFormDER, .PreguntaFormIZQ{
+    width: 48%;
+
+  }
+}
+
+.FormDesarrollar{
+  margin: 10px;
+  margin-left: 4%;
+}
+
+.BotonFormulario{
+  justify-content: center;
+ display: flex;
+ margin-bottom: 10px;
+}
