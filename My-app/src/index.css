@@ -12,19 +12,7 @@
   --blanco:rgb(255, 255, 255);
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-<<<<<<< HEAD
-  background-color: #7a9851;
-
-  /* font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
-=======
-  background-color: #242424;
->>>>>>> navbar
-}
-
+  color: rgba(255, 255, 255, 0.87);}
 a:hover {
   color: var(--marron);
 }

@@ -1,9 +1,9 @@
-<<<<<<< HEAD
+/*<<<<<<< HEAD
 import React, { useState } from 'react'
 
-const AdoptaPerro = (/*props*/) => {
+/*const AdoptaPerro = (props) => {
 
-=======
+/*=======
 
 const AdoptaPerro = () => {
   return (
@@ -13,4 +13,4 @@ const AdoptaPerro = () => {
 >>>>>>> navbar
 }
 
-export default AdoptaPerro
+export default AdoptaPerro*/
