@@ -24,22 +24,7 @@ function App() {
 
     return () => clearTimeout(timer);
   }, []);
-  // return (
-  //   <>
-  //   <Loading/>
-  //   <Navbar />
-  //   <Routes>
-  //       <Route path="/sobre-nosotros" element={<SobreNosotros />} />
-  //       <Route path="/" element={<HomePage />} />
-  //       <Route path="/dona" element={<Donacion />} />
-  //       <Route path="/donated" element={<Agradecimiento />} />
-  //       <Route path="/adopta/perros" element={<AdoptaPerro />} />
-  //       <Route path="/adopta/gatos" element={<AdoptaGato />} />
-  //       <Route path="/carrito" element={<Carrito />} />
-  //   </Routes>
-  //   <Footer />    
-  //   </>
-  // )
+
   return (
     <div className="app">
       {isLoading ? (
@@ -48,18 +33,17 @@ function App() {
         <PrimerComponente />
       ) : (
         <div className="content">
-          {/* Renderiza tus otros componentes aquí después de que hayan pasado los 3 segundos */}
         <Navbar />
-  //   <Routes>
-  //       <Route path="/sobre-nosotros" element={<SobreNosotros />} />
-  //       <Route path="/" element={<HomePage />} />
-  //       <Route path="/dona" element={<Donacion />} />
-  //       <Route path="/donated" element={<Agradecimiento />} />
-  //       <Route path="/adopta/perros" element={<AdoptaPerro />} />
-  //       <Route path="/adopta/gatos" element={<AdoptaGato />} />
-  //       <Route path="/carrito" element={<Carrito />} />
-  //   </Routes>
-  //   <Footer />    
+        <Routes>
+            <Route path="/sobre-nosotros" element={<SobreNosotros />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/dona" element={<Donacion />} />
+            <Route path="/donated" element={<Agradecimiento />} />
+            <Route path="/adopta/perros" element={<AdoptaPerro />} />
+            <Route path="/adopta/gatos" element={<AdoptaGato />} />
+            <Route path="/carrito" element={<Carrito />} />
+        </Routes>
+        <Footer />    
         </div>
       )}
     </div>
