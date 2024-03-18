@@ -13,7 +13,7 @@ const[razonAdopcion,setRazonAdopcion]=useState("");
 const[AmigosAnimales,setAmigosAnimales]=useState("");
 const[segundoNumero,setSegundoNumero]=useState("");
 
-const{idGato}=useParams();
+const{id}=useParams();
 
 
 
