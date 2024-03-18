@@ -6,14 +6,17 @@
   margin-top: 4%;
   border: 1px solid black;
   position: relative;
+  margin-bottom: 3%;
+  background-color: rgb(57, 98, 27);
+  border-radius:4% ;
 }
 
 .carousel-container {
   position: relative;
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 50% 50%;
   width: 100%;
-  max-width: 1200px; /* Limita el ancho del carousel */
+  max-width: 1350px; /* Limita el ancho del carousel */
   height: 400px;
   overflow: hidden;
   margin-left: 4%;
@@ -46,15 +49,17 @@
 }
 
 .text-container {
-  width: 40%;
+  width: 39%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 10px;
-  font-size: 26px;
+  font-size: 24px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+ 
 }
 
