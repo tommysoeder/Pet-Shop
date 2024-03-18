@@ -1,16 +1,16 @@
-<<<<<<< HEAD
+/*<<<<<<< HEAD*/
 import React, { useState } from 'react'
 
-const AdoptaPerro = (/*props*/) => {
+/*const AdoptaPerro = (props) => {
 
-=======
+/*=======*/
 
 const AdoptaPerro = () => {
   return (
     <div>Adopta un Perro
     </div>
   )
->>>>>>> navbar
+/*>>>>>>> navbar*/
 }
 
-export default AdoptaPerro
+export default AdoptaPerro;

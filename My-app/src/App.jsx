@@ -46,27 +46,21 @@ function App() {
   }, []);
 
   return (
-    <div className="app">
-      {isLoading ? (
-        <Loading />
-      ) : showLoading ? (
-        <PrimerComponente />
-      ) : (
-        <div className="content">
-        <Navbar />
-     <Routes>
-         <Route path="/sobre-nosotros" element={<SobreNosotros />} />
-         <Route path="/" element={<HomePage />} />
-         <Route path="/dona" element={<Donacion />} />
-         <Route path="/donated" element={<Agradecimiento />} />
-         <Route path="/adopta/perros" element={<AdoptaPerro />} />
-         <Route path="/adopta/gatos" element={<AdoptaGato />} />
-         <Route path="/carrito" element={<Carrito />} />
-     </Routes>
-     <Footer />    
-        </div>
-      )}
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/sobre-nosotros" element={<SobreNosotros />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/dona" element={<Donacion />} />
+        <Route path="/donated" element={<Agradecimiento />} />
+        <Route path="/adopta/perros" element={<AdoptaPerro />} />
+        <Route path="/adopta/gatos" element={<AdoptaGato />} />
+        <Route path="/adopta/perros/:id" element={<FormularioPerro/>}/>
+        <Route path="/adopta/gatos/:id" element={<FormularioGato/>}/>
+        <Route path="/carrito" element={<Carrito />} />
+      </Routes>
+      <Footer />
+    </>
   );
 }
 
