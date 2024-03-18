@@ -12,6 +12,7 @@ import { Route, Routes } from "react-router-dom";
 import FormularioPerro from "./Components/FormularioPerro";
 import FormularioGato from "./Components/FormularioGato";
 import Loading from './Components/Loading';
+import { useEffect, useState } from "react";
 
 // function App() {
 //   return (
