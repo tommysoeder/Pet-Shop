@@ -1,0 +1,27 @@
+.dropdown-mobile button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding-left: 40px;
+}
+
+.dropdown-mobile button svg{
+    margin-left: 5px;
+    width: 20px;
+    padding-top: 3px;
+}
+
+.dropdown-mobile-content{
+    top: 0;
+}
+
+.dropdown-mobile-content button{
+    padding-right: 42px;
+    background-color: var(--verde-claro);
+}
+
+
+
