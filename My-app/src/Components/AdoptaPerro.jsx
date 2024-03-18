@@ -1,16 +1,13 @@
-/*<<<<<<< HEAD*/
-import React, { useState } from 'react'
-
-/*const AdoptaPerro = (props) => {
-
-/*=======*/
+import {DogCard} from '../Pages/Card'
+import "../styles/HomePage.scss"
 
 const AdoptaPerro = () => {
   return (
-    <div>Adopta un Perro
+    <div className='homePage-style'>Adopta un Perro
+      <DogCard limit={16}/>
     </div>
   )
-/*>>>>>>> navbar*/
+
 }
 
 export default AdoptaPerro;

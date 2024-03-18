@@ -4,36 +4,21 @@ import { ImagesDogs } from "../Components/utils/DogApi";
 import { ImagesCats } from "../Components/utils/CatApi";
 import '../styles/Card.scss';
 
-export function Card() {
+export function DogCard({ limit = 10 }) {
   const [dogImages, setDogImages] = useState([]);
-  const [catImages, setCatImages] = useState([]);
 
   useEffect(() => {
     const fetchDogImages = async () => {
       try {
-        const images = await ImagesDogs();
+        const images = await ImagesDogs(limit);
         setDogImages(images);
       } catch (error) {
         console.error("Error al obtener las imágenes de perros:", error);
       }
     };
     
-    
     fetchDogImages();
-  }, []);
-  
-  useEffect(() => {
-    const fetchCatImages = async () => {
-      try {
-        const images = await ImagesCats();
-        setCatImages(images);
-      } catch (error) {
-        console.error("Error al obtener las imágenes de gatos:", error);
-      }
-    };
-
-    fetchCatImages();
-  }, []);
+  }, [limit]);
   
   return (
     <div className="cards-container">
@@ -48,6 +33,28 @@ export function Card() {
           tipo={"perros"}
         />
       ))}
+    </div>
+  );
+}
+
+export function CatCard({ limit = 8 }) {
+  const [catImages, setCatImages] = useState([]);
+
+  useEffect(() => {
+    const fetchCatImages = async () => {
+      try {
+        const images = await ImagesCats(limit);
+        setCatImages(images);
+      } catch (error) {
+        console.error("Error al obtener las imágenes de gatos:", error);
+      }
+    };
+
+    fetchCatImages();
+  }, [limit]);
+  
+  return (
+    <div className="cards-container">
       {catImages.map((cat, index) => (
         <AnimalCard
           className="card"

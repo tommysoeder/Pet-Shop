@@ -1,7 +1,12 @@
+import {CatCard} from '../Pages/Card'
+import "../styles/HomePage.scss"
 
-
-const AdoptaGato = (/*props*/) => {
- 
+const AdoptaGato = () => {
+  return (
+    <div className='homePage-style'>Adopta un Gato
+      <CatCard limit={16}/>
+    </div>
+  )
     
   }
   
