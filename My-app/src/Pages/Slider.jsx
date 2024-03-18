@@ -23,7 +23,6 @@ const Slider = () => {
   }, []);
 
   return (
-    <div className="carousel-wrapper">
       <div className="carousel-container">
 
         {images.map((image, index) => (
@@ -36,7 +35,6 @@ const Slider = () => {
           </div>
         ))}
       </div>
-    </div>
   );
 };
 

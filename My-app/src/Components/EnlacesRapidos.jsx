@@ -1,5 +1,4 @@
 import '@fortawesome/fontawesome-free/css/all.css';
-
 import {Link} from "react-router-dom"
 
 export function EnlacesRapidos(){
