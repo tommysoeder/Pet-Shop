@@ -4,7 +4,7 @@
   border-radius: 8px;
   overflow: hidden;
   width: 300px;
-  height: 400px;
+  height: 450px;
   margin: 16px;
   background-color: #a08134;
   transition-duration: 0.4s;
@@ -18,17 +18,21 @@
 
 .animal-details {
   padding-left: 16px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   .animal-name {
     font-size: 1.5em;
-    margin-bottom: 0px;
+    margin-bottom: 8px;
     height: 50px;
   }
 
   .animal-description {
     font-size: 1em;
     color: #464646;
-    margin: 0;
+    
   }
 }
 
