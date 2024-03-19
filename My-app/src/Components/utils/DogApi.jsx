@@ -6,11 +6,11 @@ const theCatAPI = new TheCatAPI(API_KEY, {
   host: "https://api.thedogapi.com/v1",
 });
 
-export async function ImagesDogs() {
+export async function ImagesDogs(limit = 8) {
   try {
     const images = await theCatAPI.images.searchImages(
       {
-        limit: 8,
+        limit: limit,
         hasBreeds: true,
       },
       {

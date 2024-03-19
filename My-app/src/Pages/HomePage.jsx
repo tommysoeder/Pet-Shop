@@ -1,6 +1,6 @@
 import Arriba from "../Components/Arriba"
 import Slider from './Slider'
-import {Card} from './Card'
+import {DogCard, CatCard} from './Card'
 import "../styles/HomePage.scss"
 
 
@@ -8,7 +8,8 @@ const HomePage = () => {
   return (
     <div className="homePage-style">   
       <Slider />
-      <Card className="cardStyle"/>
+      <DogCard limit={8}/>
+      <CatCard limit={8}/>
       <Arriba />
     </div>
   )

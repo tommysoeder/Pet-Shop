@@ -10,13 +10,13 @@ export function EnlacesRapidos(){
             
             <Link to="/adopta/perros"><i class="fa-solid fa-dog"></i> Perros</Link>  
             <hr /> 
-            <Link to="/adopta/gatos"><i class="fa-solid fa-paw"></i> Gatos</Link>
+            <Link to="/adopta/gatos"><i class="fa-solid fa-cat"></i> Gatos</Link>
             <hr />
             <Link to=""> <i class="fa-solid fa-house"></i> Inicio</Link> 
             <hr />
             <Link to="/dona"><i class="fa-brands fa-paypal"></i> Dona</Link>
             <hr />
-            <Link to="/carrito"> <i class="fa-solid fa-cart-shopping"></i> Carrito</Link>
+            
         
             
 

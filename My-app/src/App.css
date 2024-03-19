@@ -67,7 +67,7 @@ margin-right: 15px;
   background-color:#656d2b;
   max-width: 90%;
   margin-left: 5%;
-  margin-top: 30px;
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,6 +78,21 @@ margin-right: 15px;
   color: #c8a668
 
   ;
+}
+
+.sizefoto{
+  height: 400px;
+  margin-top: 10px;
+  width: 60%;
+  border-radius: 10px;
+  
+}
+
+.tituloAdopcionMascota{
+  display: flex;
+  margin-left: 30%;
+  align-items: center;
+  font-size: 3rem;
 }
 
 
