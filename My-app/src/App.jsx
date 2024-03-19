@@ -12,7 +12,7 @@ import { Route, Routes } from "react-router-dom";
 
 import { useState, useEffect } from "react";
 import Loading from './Components/Loading';
-import { useEffect, useState } from "react";
+
 
 import FormularioAdopcion from "./Components/FormularioAdopcion";
 
@@ -44,7 +44,7 @@ function App() {
             <Route path="/donated" element={<Agradecimiento />} />
             <Route path="/adopta/perros" element={<AdoptaPerro />} />
             <Route path="/adopta/gatos" element={<AdoptaGato />} />
-            <Route path="/carrito" element={<Carrito />} />
+         
             <Route path="/adopta/:tipo/:id" element={<FormularioAdopcion/>}/>
         </Routes>
         <Footer />    
