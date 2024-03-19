@@ -13,12 +13,15 @@ const FormularioDonacion = () => {
     const [securityCode, setSecurityCode] = useState('');
     const [showAlert, setShowAlert] = useState(false);
     const [submitted, setSubmitted] = useState(false); 
+    const [totalDonation, setTotalDonation] = useState(0);
 
     const handleSubmit = (e) => {
       e.preventDefault();
 
       if (!name || !email || !amount || !cardNumber || !expDate || !securityCode){
         setShowAlert(true); 
+        setShowThankYou(true);
+        setTotalDonation(totalDonation + Number(donationAmount));
         return; 
       }
 
@@ -28,6 +31,8 @@ const FormularioDonacion = () => {
       console.log('Número de Tarjeta:', cardNumber);
       console.log('Fecha de Caducidad:', expDate);
       console.log('CVV:', securityCode);
+
+      setTotalDonation(totalDonation + Number(amount));
 
       setName('');
       setAmount('');
@@ -73,7 +78,8 @@ const FormularioDonacion = () => {
         </div>
       </form>
       {showAlert && <div className="alert">Por favor, rellena todos los campos.</div>}
-      {submitted && <Navigate to="/donated" />} 
+      {console.log(totalDonation)}
+      {submitted && <Navigate to={{ pathname: '/donated', state: { totalDonation } }} />}
     </div>
   )
 }
