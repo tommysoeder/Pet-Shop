@@ -44,7 +44,7 @@ const FormularioPerro = () => {
       <h2> {perro.breeds[0].name}</h2>
 
       <h1 className="AdoptaGatoh">Adopta un Perro(Preguntas Rapidas)</h1>
-      <h2 className="AdoptaGatoh">Formulario de adopcion para {perro.name}</h2>
+      <h2 className="AdoptaGatoh">Formulario de adopcion para {perro.breeds[0].name}</h2>
       <form onSubmit={handleSubmitAdopted}>
         <div className="CategoriaFormulario">
           <div className="PreguntaFormIZQ">

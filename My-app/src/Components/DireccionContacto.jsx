@@ -2,7 +2,7 @@ import { useState } from "react"
 
 
 export function DireccionContacto(){
-    const[ubi,setUbi]=useState(false);
+    const[ubi,setUbi]=useState(true);
     function handleUbiToggle(){
         setUbi(()=>!ubi)
     }

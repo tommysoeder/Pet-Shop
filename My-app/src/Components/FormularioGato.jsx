@@ -43,7 +43,7 @@ const FormularioGato = (/*props*/) => {
      
       <h1 className="AdoptaGatoh">Adopta un Gato(Preguntas Rapidas)</h1>
       <h2 className="AdoptaGatoh">
-        Formulario de adopcion para {/*gato.nombre*/}
+        Formulario de adopcion para {gato.breeds[0].name}
       </h2>
       <form className="FormularioAdopcion" onSubmit={handleSubmitAdopted}>
         <div className="CategoriaFormulario">
