@@ -10,11 +10,6 @@
     transform-origin: center center;
 }
 
-/* .dropdown_menu-8
-    animation: downOut 300ms ease-in-out forwards
-    transform-origin: center center */
-
-
 @keyframes downOut {
      0% {
         transform: translateZ(200px) transLateY(40px)
@@ -48,6 +43,7 @@
     padding-left: 6px;
     border-style: none;
     width:auto;
+    margin-bottom:1px;
 }
 
 .dropdown-content a:hover{
