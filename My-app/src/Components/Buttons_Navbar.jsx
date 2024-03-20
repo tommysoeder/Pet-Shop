@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 const Buttons_Navbar = () => {
   return (
     <div className='Buttons_Navbar'>
-        <Nav_Button link={<Link to="/">Inicio</Link>}/>
+        <div className='boton1'><Nav_Button link={<Link to="/">Inicio</Link>}/></div>
         <DropdownAdopta button="Adopta"/>
         <Nav_Button link={<Link to="/dona">Dona</Link>}/>
-        <Nav_Button link={<Link to="/sobre-nosotros">Sobre Nosotros</Link>}/>
+        <div className='boton4'><Nav_Button link={<Link to="/sobre-nosotros">Sobre Nosotros</Link>}/></div>
     </div>
   )
 }

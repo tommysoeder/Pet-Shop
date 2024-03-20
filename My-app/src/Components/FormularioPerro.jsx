@@ -45,9 +45,8 @@ const FormularioPerro = () => {
     <div className="ContenedorFormulario">
       <img className="sizefoto" src={perro.url} alt={perro.breeds[0].name} />
       <h2> {perro.breeds[0].name}</h2>
-
-      <h1 className="AdoptaGatoh">Adopta un amigo :D(Preguntas Rapidas)</h1>
-      <h2 className="AdoptaGatoh">Formulario de adopcion para {perro.breeds[0].name}</h2>
+      <h1 className="AdoptaGatoh">Adopta un amigo :D (Preguntas Rápidas)</h1>
+      <h2 className="AdoptaGatoh">Formulario de adopción para {perro.breeds[0].name}</h2>
       <form onSubmit={handleSubmitAdopted}>
         <div className="CategoriaFormulario">
           <div className="PreguntaFormIZQ">
@@ -63,7 +62,6 @@ const FormularioPerro = () => {
               required
             />
           </div>
-
           <div className="PreguntaFormDER">
             <label className="AdoptaGatoh" htmlFor="apellido">
               Apellido<span className="requiredSpan">*</span>:
@@ -78,7 +76,6 @@ const FormularioPerro = () => {
             />
           </div>
         </div>
-
         <div className="CategoriaFormulario">
           <div className="PreguntaFormIZQ">
             <label className="AdoptaGatoh" htmlFor="fechaNacimiento">
@@ -92,10 +89,9 @@ const FormularioPerro = () => {
               onChange={(e) => setFechaNacimiento(e.target.value)}
             />
           </div>
-
           <div className="PreguntaFormDER">
             <label className="AdoptaGatoh" htmlFor="direccion">
-              Direccion<span className="requiredSpan">*</span>:
+              Dirección<span className="requiredSpan">*</span>:
             </label>
             <input
               className="InputForm1"
@@ -106,7 +102,6 @@ const FormularioPerro = () => {
             />
           </div>
         </div>
-
         <div className="CategoriaFormulario">
           <div className="PreguntaFormIZQ">
             <label className="AdoptaGatoh" htmlFor="telefono">
@@ -121,7 +116,6 @@ const FormularioPerro = () => {
               required
             />
           </div>
-
           <div className="PreguntaFormDER">
             <label className="AdoptaGatoh" htmlFor="email">
               Correo electrónico<span className="requiredSpan">*</span>:
@@ -163,12 +157,10 @@ const FormularioPerro = () => {
             />
           </div>
         </div>
-
-        <h2 className="AdoptaGatoh">Preguntas desarrollar!</h2>
-
+        <h2 className="AdoptaGatoh">Preguntas a desarrollar:</h2>
         <div className="FormDesarrollar">
           <label className="AdoptaGatoh" htmlFor="razonAdopcion">
-            1. ¿por qué has decidido adoptar un perro y no comprarlo?{" "}
+            1. ¿Por qué has decidido adoptar un perro y no comprarlo?{" "}
           </label>
           <textarea
             id="razonAdopcion"
@@ -176,11 +168,10 @@ const FormularioPerro = () => {
             onChange={(e) => setRazonAdopcion(e.target.value)}
           />
         </div>
-
         <div className="FormDesarrollar">
           <label className="AdoptaGatoh" htmlFor="AmigosAnimales">
             2. En la actualidad, ¿tienes animales con los que tenga que convivir
-            el adoptado? ¿cuáles? Cuéntanos algo sobre ellos.{" "}
+            el adoptado? ¿Cuáles? Cuéntanos algo sobre ellos.{" "}
           </label>
           <textarea
             id="AmigosAnimales"
@@ -188,7 +179,6 @@ const FormularioPerro = () => {
             onChange={(e) => setAmigosAnimales(e.target.value)}
           />
         </div>
-
         <div className="FormDesarrollar">
           <label className="AdoptaGatoh" htmlFor="gastosAnimales">
             3. ¿Sabes qué gastos puede ocasionar un perro? Veterinario,
@@ -200,10 +190,9 @@ const FormularioPerro = () => {
             onChange={(e) => setGastosAnimales(e.target.value)}
           />
         </div>
-
         <div className="FormDesarrollar">
           <label className="AdoptaGatoh" htmlFor="nenesVivienda">
-            4. ¿Hay niños en la vivienda?
+            4. ¿Hay niños en tu vivienda?
           </label>
           <textarea
             id="nenesVivienda"
@@ -211,10 +200,9 @@ const FormularioPerro = () => {
             onChange={(e) => setNenesVivienda(e.target.value)}
           />
         </div>
-
         <div className="FormDesarrollar">
           <label className="AdoptaGatoh" htmlFor="lugarAnimal">
-            5. ¿Qué lugar de la vivienda estará destinado al animal? ¿ estaría
+            5. ¿Qué lugar de la vivienda estará destinado al animal? ¿Estaría
             dentro o fuera de la casa? En caso de ser un chalet, ¿está
             convenientemente vallado para su seguridad?{" "}
           </label>
@@ -224,7 +212,6 @@ const FormularioPerro = () => {
             onChange={(e) => setLugarAnimal(e.target.value)}
           />
         </div>
-
         <div className="BotonFormulario">
           <button type="submit">Enviar</button>
         </div>

@@ -110,4 +110,11 @@
       display: flex;
     }
   }
-  
+
+.boton4{
+    border-right: 1px solid var(--blanco);
+}
+
+.boton1{
+    border-left: 1px solid var(--blanco);
+}

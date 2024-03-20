@@ -1,4 +1,5 @@
 import '../styles/sobre-nosotros.css'
+import Arriba from './Arriba'
 
 const SobreNosotros = () => {
   return (
@@ -17,6 +18,7 @@ Nuestra misión va más allá de simplemente proporcionar un techo y comida, nos
 
 </p><p>En nuestro refugio de animales, la esperanza nunca se agota, cada día nos levantamos con el compromiso renovado de hacer del mundo un lugar mejor para los animales que comparten nuestras vidas. Te invitamos a unirte a nosotros en este viaje de compasión, amor y respeto por todas las criaturas vivientes. Juntos, podemos marcar una diferencia y escribir un capítulo de amor en las vidas de aquellos que más lo necesitan. ¡Bienvenido a nuestro refugio de animales, donde cada historia tiene un final feliz!</p>
         </article>
+        <Arriba/>
     </div>
   )
 }

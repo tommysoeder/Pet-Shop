@@ -1,6 +1,7 @@
 import { useState, useEffect} from 'react';
 import '../styles/FormularioDonacion.css'
 import { Navigate } from 'react-router-dom';
+import Arriba from './Arriba';
 
 const FormularioDonacion = () => {
 
@@ -91,7 +92,9 @@ const FormularioDonacion = () => {
       {showAlert && <div className="alert">Por favor, rellene todos los campos.</div>}
       {console.log(totalDonation)}
       {submitted && <Navigate to={{ pathname: '/donated', state: { totalDonation } }} />}
+      <Arriba/>
     </div>
+    
   )
 }
 

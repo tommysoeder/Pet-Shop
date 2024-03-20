@@ -14,26 +14,21 @@ import FormularioAdopcion from "./Components/FormularioAdopcion";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-  const [showLoading, setShowLoading] = useState(true);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-      setShowLoading(false);
     }, 3000);
 
     return () => clearTimeout(timer);
   }, []);
 
+
   return (
     <div className="app">
-      {isLoading ? (
-        <Loading />
-      ) : showLoading ? (
-        <PrimerComponente />
-      ) : (
-        <div className="content">
-          <Navbar />
-          <Routes>
+    <div className={isLoading ? 'loading' : 'content'}>
+      <Navbar />
+        <Routes>
             <Route path="/sobre-nosotros" element={<SobreNosotros />} />
             <Route path="/" element={<HomePage />} />
             <Route path="/dona" element={<Donacion />} />
@@ -43,9 +38,9 @@ function App() {
          
             <Route path="/adopta/:tipo/:id" element={<FormularioAdopcion/>}/>
         </Routes>
-        <Footer />    
+        <Footer />
         </div>
-      )}
+      {isLoading && <Loading />}
     </div>
   );
 }

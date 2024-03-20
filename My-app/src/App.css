@@ -1,19 +1,27 @@
+.content{
+  display:block;
+}
+
+.loading{
+  display:none;
+}
+
 .navbar{
   display: flex;
   align-items: center;
   justify-content: space-around;
+  width: 100%;
+  z-index: 1000;
 }
 
 .footer{
   display: flex;
   background-color: #656d2b;
-  
+  margin-top: 40px;
   flex-wrap: wrap;
   padding-left: 5%;
-  
-  
-  
 }
+
 
 @media(max-width:768px){
   .footer > div {
@@ -60,7 +68,19 @@ margin-right: 15px;
 }
 .botonBoletin{
   padding-top: 0px;
-  padding-bottom: 0px;
+  padding-bottom: 1px;
+  margin-left: 3px;
+  background-color: var(--verde-claro);
+  border: none;
+  border-radius: 3px;
+}
+
+.boletincss input{
+  border-radius: 3px;
+  border: none;
+  margin-top: -5px;
+  margin-right: 5px;
+
 }
 
 .ContenedorFormulario{
@@ -72,18 +92,31 @@ margin-right: 15px;
   flex-direction: column;
   align-items: center;
   margin-bottom: 10px;
-  
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
 }
-.AdoptaGatoh{
-  color: #c8a668
 
-  ;
+.ContenedorFormulario h1{
+  margin-top: -10px;
+  height: 25px;
+}
+
+.ContenedorFormulario input{
+  background-color: var(--verde-fondo);
+  border: none;
+  border-radius: 5px;
+  margin-top: 3px;
+}
+
+.AdoptaGatoh{
+  color: #c8a668;
 }
 
 .sizefoto{
-  height: 400px;
-  margin-top: 10px;
-  width: 60%;
+  height: 300px;
+  margin-top: 20px;
+  width: auto;
   border-radius: 10px;
   
 }
@@ -139,8 +172,22 @@ margin-left: 15%;
   margin-left: 4%;
 }
 
+.FormDesarrollar textarea{
+  margin-left:10px;
+  height: 20px;
+  background-color: var(--verde-fondo);
+  border-radius: 5px;
+  border: none;
+}
+
 .BotonFormulario{
-  justify-content: center;
+justify-content: center;
  display: flex;
  margin-bottom: 10px;
+}
+
+.BotonFormulario button{
+  background-color: var(--verde-claro);
+  border: none;
+  border-radius: 5px;
 }

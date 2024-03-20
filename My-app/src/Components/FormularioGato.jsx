@@ -44,9 +44,9 @@ const FormularioGato = (/*props*/) => {
         <img className="sizefoto" src={gato.url} alt={gato.breeds[0].name} />
         <h2> {gato.breeds[0].name}</h2>
      
-      <h1 className="AdoptaGatoh">Adopta un Gato(Preguntas Rapidas)</h1>
+      <h1 className="AdoptaGatoh">Adopta un Gato (Preguntas Rápidas)</h1>
       <h2 className="AdoptaGatoh">
-        Formulario de adopcion para {gato.breeds[0].name}
+        Formulario de adopción para {gato.breeds[0].name}
       </h2>
       <form className="FormularioAdopcion" onSubmit={handleSubmitAdopted}>
         <div className="CategoriaFormulario">
@@ -164,11 +164,11 @@ const FormularioGato = (/*props*/) => {
           </div>
         </div>
 
-        <h2 className="AdoptaGatoh">Preguntas desarrollar!</h2>
+        <h2 className="AdoptaGatoh">Preguntas a desarrollar:</h2>
 
         <div className="FormDesarrollar">
           <label className="AdoptaGatoh" htmlFor="razonAdopcion">
-            1. ¿por qué has decidido adoptar un gato y no comprarlo?{" "}
+            1. ¿Por qué has decidido adoptar un gato y no comprarlo?{" "}
           </label>
           <textarea
             id="razonAdopcion"
@@ -180,7 +180,7 @@ const FormularioGato = (/*props*/) => {
         <div className="FormDesarrollar">
           <label className="AdoptaGatoh" htmlFor="AmigosAnimales">
             2. En la actualidad, ¿tienes animales con los que tenga que convivir
-            el adoptado? ¿cuáles? Cuéntanos algo sobre ellos.{" "}
+            el adoptado? ¿Cuáles? Cuéntanos algo sobre ellos.{" "}
           </label>
           <textarea
             id="AmigosAnimales"
@@ -203,7 +203,7 @@ const FormularioGato = (/*props*/) => {
 
         <div className="FormDesarrollar">
           <label className="AdoptaGatoh" htmlFor="nenesVivienda">
-            4. ¿Hay niños en la vivienda?
+            4. ¿Hay niños en tu vivienda?
           </label>
           <textarea
             id="nenesVivienda"
@@ -214,7 +214,7 @@ const FormularioGato = (/*props*/) => {
 
         <div className="FormDesarrollar">
           <label className="AdoptaGatoh" htmlFor="lugarAnimal">
-            5. ¿Qué lugar de la vivienda estará destinado al animal? ¿ estaría
+            5. ¿Qué lugar de la vivienda estará destinado al animal? ¿Estaría
             dentro o fuera de la casa? En caso de ser un chalet, ¿está
             convenientemente vallado para su seguridad?{" "}
           </label>
