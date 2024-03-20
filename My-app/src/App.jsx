@@ -6,14 +6,10 @@ import Donacion from "./Components/Donacion";
 import Agradecimiento from "./Components/Agradecimiento";
 import AdoptaPerro from "./Components/AdoptaPerro";
 import AdoptaGato from "./Components/AdoptaGato";
-
 import SobreNosotros from  "./Components/SobreNosotros"
 import { Route, Routes } from "react-router-dom";
-
 import { useState, useEffect } from "react";
 import Loading from './Components/Loading';
-
-
 import FormularioAdopcion from "./Components/FormularioAdopcion";
 
 function App() {
