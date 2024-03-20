@@ -4,8 +4,8 @@ import { useState } from "react"
 
 
 export function NumeroTelefono(){
-    const [seeInstagram,setSeeInstagram]= useState(false);
-    const [seeTelefono,setSeeTelefono]=useState(false)
+    const [seeInstagram,setSeeInstagram]= useState(true);
+    const [seeTelefono,setSeeTelefono]=useState(true)
 
     const toggleInstagram=()=>{
         setSeeInstagram(!seeInstagram);

@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 export function CorreoElectronico(){
-    const [textoRefugio, setTextoRefugio]=useState(false)
+    const [textoRefugio, setTextoRefugio]=useState(true)
 
     const toggleRefugio=()=>{
         setTextoRefugio(!textoRefugio)

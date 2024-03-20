@@ -1,7 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect} from 'react';
 import '../styles/FormularioDonacion.css'
-import { Routes, Route, Navigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 
 const FormularioDonacion = () => {
 
@@ -13,12 +12,25 @@ const FormularioDonacion = () => {
     const [securityCode, setSecurityCode] = useState('');
     const [showAlert, setShowAlert] = useState(false);
     const [submitted, setSubmitted] = useState(false); 
+    const [totalDonation, setTotalDonation] = useState(0);
+
+    useEffect(() => {
+      const totalDonationFromStorage = localStorage.getItem('totalDonation');
+      if (totalDonationFromStorage) {
+          setTotalDonation(Number(totalDonationFromStorage));
+      }
+  }, []);
 
     const handleSubmit = (e) => {
       e.preventDefault();
 
       if (!name || !email || !amount || !cardNumber || !expDate || !securityCode){
         setShowAlert(true); 
+        setShowThankYou(true);
+        setTotalDonation(totalDonation + Number(donationAmount));
+
+        localStorage.setItem('totalDonation', totalDonation + Number(donationAmount));
+
         return; 
       }
 
@@ -28,6 +40,10 @@ const FormularioDonacion = () => {
       console.log('Número de Tarjeta:', cardNumber);
       console.log('Fecha de Caducidad:', expDate);
       console.log('CVV:', securityCode);
+
+      setTotalDonation(totalDonation + Number(amount));
+
+      localStorage.setItem('totalDonation', totalDonation + Number(amount));
 
       setName('');
       setAmount('');
@@ -72,8 +88,9 @@ const FormularioDonacion = () => {
           <button type="submit">Dona</button>
         </div>
       </form>
-      {showAlert && <div className="alert">Por favor, rellena todos los campos.</div>}
-      {submitted && <Navigate to="/donated" />} 
+      {showAlert && <div className="alert">Por favor, rellene todos los campos.</div>}
+      {console.log(totalDonation)}
+      {submitted && <Navigate to={{ pathname: '/donated', state: { totalDonation } }} />}
     </div>
   )
 }
