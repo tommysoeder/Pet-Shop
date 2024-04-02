@@ -17,7 +17,6 @@ const Agradecimiento = () => {
   return (
     <div className='agradecimiento'>
         <img src={imagen}  alt="Gracias!"></img>
-        <h3>Total donado por nuestros colaboradores: {totalDonation}€</h3>
         <p>Todo el equipo de Horse Luis Animal Shelter, incluido el propio Horse Luis, le estamos inmensamente agradecidos por su aportación.</p>
         <h3>Total donado por nuestros colaboradores: {totalDonation}€</h3>     
     </div>
